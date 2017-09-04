@@ -1,0 +1,1 @@
+This folder explains the use of various resampling techniques to address the class imbalance problem. The classifier used for each of the resampling technique is decision tree classifier. The code with undersampling technique also includes the tuning of decision tree classifier with various parameters. 
