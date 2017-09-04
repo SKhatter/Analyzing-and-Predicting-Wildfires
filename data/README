@@ -1,1 +1,26 @@
-This data is prepared using the gdal utilities. The steps can be checked in the paper.
+This data is prepared using the gdal utilities. 
+
+
+Preparing Label of the Dataset.(file: fire2014_.tif) 
+The steps to prepare the target data (2013-2014 fire perimeters) from the historical fire database are written below:
+1) Reproject the original shapefile (for the system described here, it is UTM Zone 11).
+2) Select and export the records from the years 2013-2014 (2013 and 2014 both inclusive).
+3) Rasterize the vector data saved in the previous step.
+4) Clip the rasterized data to the study area.
+
+
+Preparing Cumulative Fire Frequency Feature of the Dataset (file: fire92_12_.tif)
+The following explains the calculation of the cumulative fire frequencies between 1992 and 2012.
+1) Change the projection of fire history dataset to the desired map projection.
+2) Choose the records of the years 1992-2012.
+3) Calculate the overlapping fire polygons.
+4) Rasterize the vector file saved in the previous step.
+5) Clip the rasterized data to the study area.
+
+Preparing Data from Landscape File (files: band1_.tif (elevation), band2_.tif (slope), band3_.tif (aspect), band4_.tif (fuel model number).The dataset prepared for this project uses first four bands of the landscape file namely Elevation, Slope, Aspect and Fuel Model
+Number.
+Steps to prepare dataset features using this file are written below:
+1) Warping of the original file to reproject it into a desired common projection.
+2) Translating the multi-band raster to individual first four raster band files.
+3) Clipping of the four single band raster data to get data of a desired area.
+
